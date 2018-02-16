@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "../../assets/appertureacademy.png";
 import Desktop from "../../assets/desktop.png";
 import Icon from "../../assets/icon.png";
+import Term1 from "../../assets/terminal.png";
+import Term2 from "../../assets/terminal2.png";
 import PHRASES from "../../constants";
 import "./Glados.css";
 
@@ -11,7 +13,8 @@ class Glados extends React.Component {
     this.phrases = PHRASES;
     this.state = {
       powerOn: false,
-      speech: []
+      speech: [],
+      booting: false
     };
   }
 
@@ -29,6 +32,15 @@ class Glados extends React.Component {
     list.push(phrase);
     this.setState({ speech: list });
     console.log(this.state.speech);
+  }
+
+  boot() {
+    this.setState({booting: true})
+    setTimeout(() => {
+      this.setState({powerOn: true})
+    }, 2000)
+
+
   }
 
   render() {
@@ -61,7 +73,7 @@ class Glados extends React.Component {
             <button
               id="secbutton"
               className="button--testing"
-              onClick={() => this.setState({ powerOn: false })}
+              onClick={() => this.setState({ powerOn: false, booting: false })}
             >
               N
             </button>
@@ -69,15 +81,22 @@ class Glados extends React.Component {
         </main>
       );
     } else {
+      let source
+      if (this.state.booting) {
+        source = Term2
+      } else {
+        source = ''
+      }
       return (
         <main>
+          <img src={source} className='img--terminal'/>
           <div className="div--iconwrapper">
             <img
               className="img--icon"
-              onClick={() => this.setState({ powerOn: true })}
+              onClick={() => this.boot()}
               src={Icon}
             />
-            <div className="div--filename">'GLaDos.exe'</div>
+          <div className="div--filename">'GLaDOS.exe'</div>
           </div>
         </main>
       );
