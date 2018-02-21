@@ -2,11 +2,12 @@
   "name": "apperture-academy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://iandelduca.com/AppertureAcademy",
-  "devDependancies" : {
+  "homepage": "http://iandelduca.com/ApertureAcademy",
+  "devDependancies": {
     "gh-pages": "^1.0.0"
   },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
