@@ -2,12 +2,18 @@
   "name": "apperture-academy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://iandelduca.com/AppertureAcademy",
+  "devDependancies" : {
+    "gh-pages": "^1.0.0"
+  },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
