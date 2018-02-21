@@ -29,9 +29,14 @@ class Glados extends React.Component {
   generateSpeech() {
     const phrase = this.phrases[this.randomPhrase()];
     const list = this.state.speech.slice(0);
-    list.push(phrase);
-    this.setState({ speech: list });
-    console.log(this.state.speech);
+    if (list.length === 3) {
+      list.shift()
+      list.push(phrase)
+      this.setState({ speech: list })
+    } else {
+      list.push(phrase);
+      this.setState({ speech: list });
+    }
   }
 
   boot() {
@@ -73,7 +78,7 @@ class Glados extends React.Component {
             <button
               id="secbutton"
               className="button--testing"
-              onClick={() => this.setState({ powerOn: false, booting: false })}
+              onClick={() => this.setState({ powerOn: false, booting: false, speech: [] })}
             >
               N
             </button>

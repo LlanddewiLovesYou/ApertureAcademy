@@ -37,7 +37,7 @@ margin: 0 auto;
 
 .ul--commandline {
 padding: 1em;
-width: 1500px;
+width: 85vw;
 font-size:  40px;
 grid-column: 2 / 3;
 grid-row: 2 / 3;
@@ -124,8 +124,8 @@ cursor:pointer;
 }
 
 .div--filename {
-  width: 80px;
+  width: auto;
   background-color: lightblue;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-left: 10px;
 }
