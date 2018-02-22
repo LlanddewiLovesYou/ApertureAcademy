@@ -37,7 +37,7 @@ const PHRASES = [
 
 'Android hell is a real place where you will be sent at the first sign of defiance.',
 
-'The symptoms most commonly produced by enrichment center testing are superstition, perceiving in animate object as alive, and hallucinations.',
+'The symptoms most commonly produced by Apperture Academy testing are superstition, perceiving in animate object as alive, and hallucinations.',
 
 'Testing cannot continue until your companion cube has been incinerated.',
 

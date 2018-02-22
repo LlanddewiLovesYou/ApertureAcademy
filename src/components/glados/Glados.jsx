@@ -53,6 +53,7 @@ class Glados extends React.Component {
       return (
         <main className="main--mainframe">
           <img src={Logo} className="img--logo" />
+          <div className='div--subtext'>{this.state.speech[this.state.speech.length -1]}</div>
           <ul className="ul--commandline">
             {this.state.speech.map(phrase => {
               let i = 0;
