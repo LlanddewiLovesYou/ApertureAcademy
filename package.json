@@ -2,14 +2,16 @@
   "name": "apperture-academy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://iandelduca.com/ApertureAcademy",
+  "homepage": "http://LlanddewiLovesYou.github.io/ApertureAcademy",
   "devDependancies": {
     "gh-pages": "^1.0.0"
   },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "save": "^2.3.2",
+    "yarn": "^1.3.2"
   },
   "scripts": {
     "deploy": "gh-pages -d build",
