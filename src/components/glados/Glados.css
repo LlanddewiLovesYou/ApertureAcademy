@@ -139,9 +139,7 @@ cursor:pointer;
   grid-row: 1;
   margin-top: 250px;
   font-size: 40px;
-  /* font-family: 'Source Code Pro', monospace; */
   color: grey;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Archivo Black', sans-serif;
   font-style: italic;
 }
